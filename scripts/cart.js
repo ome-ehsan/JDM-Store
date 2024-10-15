@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', ()=> {
 
-    window.addEventListener('pageshow', function(event) {
-        if (event.persisted) {
-            window.location.reload();
-        }
-    });
-
+    (function(){
+        window.onpageshow = function(event){
+            if (event.persisted) {
+                window.location.reload();
+            };
+        };
+    })();
 
     // removal of some default data if exist
     sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');

@@ -139,3 +139,60 @@ footer i {
     cursor: pointer;
 }
 
+
+
+/* Handling Mobile devices */
+@media (max-width: 768px) {
+    nav h2 {
+        font-size: 1.4rem; 
+    }
+
+    nav h3 {
+        font-size: 1.1rem; 
+    }
+
+    main .container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .item-container {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .item-container .price-buttons .buttons {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    nav .container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    main .container {
+        grid-template-columns: 1fr; 
+    }
+
+    .item-container {
+        height: auto; 
+    }
+
+    nav h2 {
+        font-size: 1.2rem; 
+    }
+
+    nav h3 {
+        font-size: 1rem; 
+    }
+
+    footer {
+        font-size: 18px; 
+    }
+}

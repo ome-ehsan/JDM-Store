@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // adding event to cart button
     cartButton.addEventListener('click', ()=>{
-        window.location.href = "JDM-Store/cart.html" ;
+        window.location.href = "cart.html" ;
     })
 
     //add button to git button

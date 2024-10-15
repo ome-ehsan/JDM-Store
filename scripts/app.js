@@ -1,3 +1,10 @@
+window.addEventListener('pageshow', function(event) {
+    // Check if the page was loaded from cache (event.persisted is true)
+    if (event.persisted) {
+        location.reload();  // Forces the page to reload and re-run scripts
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // removing some defauts keys in sessionStorage if they exist
     sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');

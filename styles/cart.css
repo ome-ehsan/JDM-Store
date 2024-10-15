@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #DD571C;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #232323;
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+main .container {
+    background-color: #232323;
+    color: #ffffff;
+    width: 50%;
+    padding: 20px;
+    min-height: 500px;
+    margin-top: 100px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5)
+}
+
+main h1{
+    text-align: center;
+    color: #232323;
+    border: 2px solid #3c3c3c;
+    background-color: #DD571C;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px 0px;
+}
+
+main h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+main table {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    border-spacing: 2px 8px;
+}
+
+main table th {
+    color:#DD571C;
+    background-color: #3c3c3c;
+    font-size: 1.5rem;
+    padding: 6px 0px;
+}
+
+main .row {
+    background-color: #3c3c3c;
+    text-align: center;
+    font-size: 1.4rem;  
+}
+
+.buttons-qt {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between
+}
+
+.buttons-qt .bi-plus-lg,
+.buttons-qt .bi-dash-lg {
+    cursor: pointer;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    color: #DD571C;
+}
+
+.buttons-qt .bi-plus-lg{
+    margin-left: 10px;
+}
+
+.buttons-qt .bi-dash-lg{
+    margin-right: 10px;
+}
+
+main tfoot tr td {
+    color: #DD571C;
+    font-weight: 900;
+    background-color: #3c3c3c;
+    font-size: 1.5rem;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+main #buttons {
+    margin-left: 18px;
+}
+
+main .btn1, main .btn2 {
+    margin-right: 14px;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 8px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #DD571C;
+    color: #232323;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+

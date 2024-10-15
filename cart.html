@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="scripts/cart.js" defer></script>
+    <title>Cart</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Cart</h1>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Order Summary</h1>
+            <h2 id="ifEmpty">Cart is empty. Add some!</h2>
+            <table class="table" id="tableID">
+                <thead class="head" id="headID">
+                    <tr>
+                        <th>Car Model</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody class="tableBody">
+                    <!-- will add later based on data -->
+                </tbody>
+                <tfoot id="footerID">
+                    <tr>
+                      <td colspan="2">Total Price</td>
+                      <td id="priceID">$</td> <!-- total of the subtotals -->
+                    </tr>
+                  </tfoot>
+            </table>
+            <br>
+            <div id="buttons">
+                <button class="btn1" id="clearCart">Clear Cart</button>
+                <button class="btn2" id="checkout">Checkout</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

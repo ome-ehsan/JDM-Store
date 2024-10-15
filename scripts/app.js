@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    });
+
     // removing some defauts keys in sessionStorage if they exist
     sessionStorage.removeItem('IsThisFirstTime_Log_From_LiveServer');
     sessionStorage.removeItem('bis_data');

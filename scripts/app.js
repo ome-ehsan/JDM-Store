@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // now retrieving previous data
     const totalPrice = parseInt(sessionStorage.getItem('total'));
-    if(totalPrice > 0){
+    if(totalPrice >= 0){
         for(let i = 0; i < sessionStorage.length; i++){
             const key = sessionStorage.key(i);
             if (key === 'total'){continue} else{
